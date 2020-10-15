@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Contact Us </title>
+
+ <link rel="stylesheet" href="stylesheet.css">
+
+<style>
+  /* Specific for Contact Form */
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px dashed #ffe401;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #95c392;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <img src="https://marydland.com/images/header_photo.JPG" alt="Header photo for We love Ananas"  />
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+
+  <a href="contact.html" style="float:right">Contact Us</a>
+  <a href="story.html" style="float:right">Our Story</a>
+  <a href="shop.html" style="float:right">Shop now!</a>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://marydland.com/images/yellow_ananas_glasses.jpg" alt="Photo of Ananas with sunglasses" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic" placeholder="Choose Topic">
+          <option value="support">Support</option>
+          <option value="campaign">Campaign</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="index.html">Home</a> &nbsp;&nbsp; <a href="shop.html"> Webshop</a> &nbsp;&nbsp; <a href="story.html"> Our Story</a> &nbsp;&nbsp; <a href="contact.html"> Contact us</a>
+</div>
+
+</body>
+</html>
